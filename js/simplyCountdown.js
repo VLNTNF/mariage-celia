@@ -122,10 +122,10 @@
                 minutes: 0,
                 seconds: 0,
                 words: {
-                    days: 'day',
-                    hours: 'hour',
+                    days: 'jour',
+                    hours: 'heure',
                     minutes: 'minute',
-                    seconds: 'second',
+                    seconds: 'seconde',
                     pluralLetter: 's'
                 },
                 plural: true,
@@ -268,18 +268,3 @@
 
     exports.simplyCountdown = simplyCountdown;
 }(window));
-
-/*global $, jQuery, simplyCountdown*/
-if (window.jQuery) {
-    (function ($, simplyCountdown) {
-        'use strict';
-
-        function simplyCountdownify(el, options) {
-            simplyCountdown(el, options);
-        }
-
-        $.fn.simplyCountdown = function (options) {
-            return simplyCountdownify(this.selector, options);
-        };
-    }(jQuery, simplyCountdown));
-}
