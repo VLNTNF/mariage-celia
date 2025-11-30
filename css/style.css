@@ -1,17 +1,20 @@
 :root {
   --blue: #c1e0ff;
   --black: #000;
-  --black-primary: rgba(0, 0, 0, 0.6);
-  --black-secondary: rgba(0, 0, 0, 0.4);
+  --primary: rgba(0, 0, 0, 0.6);
+  --secondary: rgba(0, 0, 0, 0.4);
+  --brown: #8b7568;
+  --dark-brown: #574e4a;
   --green: #ccffdb;
+  --light-brown: #b0a49f;
   --orange: #ffd7ae;
   --pink: #ffd2ff;
-  --primary: #9c79c0;
+  --primary: #574e4a;
   --purple: #ebd7ff;
+  --secondary: #8b7568;
   --white: #fff;
   --yellow: #ffffb3;
   --shadow-effect: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
-  --shadow-effect-primary: 0 1px 0 #846b9c, 0 2px 0 #7e6794, 0 3px 0 #756088, 0 4px 0 #6d597e, 0 5px 0 #6d597e, 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 }
 
 @font-face {
@@ -31,7 +34,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: var(--black-secondary);
+  color: var(--secondary);
   background: var(--white);
 }
 
@@ -79,7 +82,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6, figure {
-  color: var(--black-primary);
+  color: var(--primary);
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
@@ -219,7 +222,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 15px;
 }
 .fh5co-nav ul li.has-dropdown .dropdown li a:hover {
-  color: var(--black-primary);
+  color: var(--primary);
 }
 .fh5co-nav ul li.has-dropdown:hover a, .fh5co-nav ul li.has-dropdown:focus a {
   color: var(--white);
@@ -332,7 +335,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
-  background-color:var(--blue);
+  background-color:var(--primary);
 }
 .fh5co-cover .overlay {
   z-index: 0;
@@ -365,6 +368,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .fh5co-cover.fh5co-cover-sm {
+  background-color: var(--secondary);
   height: 600px;
 }
 @media screen and (max-width: 768px) {
@@ -1269,8 +1273,8 @@ form label {
   font-size: 60px;
   margin-bottom: 10px;
   line-height: 1.5;
-  color: var(--pink);
-  text-shadow: var(--shadow-effect-primary);
+  font-weight: bold;
+  color: var(--primary);
   font-family: "Sacramento", Arial, serif;
 }
 @media screen and (max-width: 768px) {
@@ -1281,7 +1285,7 @@ form label {
 .fh5co-heading p {
   font-size: 18px;
   line-height: 1.5;
-  color: var(--black-secondary);
+  color: var(--secondary);
 }
 .fh5co-heading span {
   text-transform: uppercase;
@@ -1428,11 +1432,10 @@ form label {
   background: rgba(0, 0, 0, 0.4);
 }
 #fh5co-started .fh5co-heading h2 {
-  color: var(--white);
-  text-shadow: var(--shadow-effect);
+  color: var(--primary);
 }
 #fh5co-started .fh5co-heading p {
-  color: var(--primary);
+  color: var(--secondary);
 }
 #fh5co-started .form-control {
   background: rgba(255, 255, 255, 0.2);
@@ -1539,10 +1542,10 @@ form label {
   transform: translateX(0px);
 }
 #fh5co-offcanvas a {
-  color: var(--black-primary);
+  color: var(--primary);
 }
 #fh5co-offcanvas a:hover {
-  color: var(--black-secondary);
+  color: var(--secondary);
 }
 #fh5co-offcanvas ul {
   padding: 0;
@@ -1591,7 +1594,7 @@ form label {
 
 .uppercase {
   font-size: 14px;
-  color: var(--black-primary);
+  color: var(--primary);
   margin-bottom: 10px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1706,7 +1709,7 @@ form label {
   -ms-transform: rotateZ(45deg);
   -o-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
-  background: var(--black-secondary);
+  background: var(--secondary);
   box-shadow: none;
 }
 
@@ -1717,7 +1720,7 @@ form label {
   -ms-transform: rotateZ(-45deg);
   -o-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg);
-  background: var(--black-secondary);
+  background: var(--secondary);
   box-shadow: none;
 }
 
