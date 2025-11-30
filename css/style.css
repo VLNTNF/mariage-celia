@@ -10,8 +10,8 @@
   --purple: #ebd7ff;
   --white: #fff;
   --yellow: #ffffb3;
-  --shadow-effect: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
-  --shadow-effect-primary: 0 1px 0 #CCCCCC, 0 2px 0 #CCCCCC, 0 3px 0 #CCCCCC, 0 4px 0 #CCCCCC, 0 5px 0 #CCCCCC, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+  --shadow-effect: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+  --shadow-effect-primary: 0 1px 0 #846b9c, 0 2px 0 #7e6794, 0 3px 0 #756088, 0 4px 0 #6d597e, 0 5px 0 #6d597e, 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 }
 
 @font-face {
@@ -900,6 +900,13 @@ form label {
   line-height: 1.5;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 768px) {
+  #fh5co-header .display-tc h2,
+  #fh5co-counter .display-tc h2,
+  .fh5co-cover .display-tc h2 {
+    font-size: 18px;
+  }
+}
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h2,
   #fh5co-counter .display-tc h2,
@@ -984,6 +991,18 @@ form label {
   position: relative;
   animation: pulse 1s ease infinite;
 }
+@media screen and (max-width: 768px) {
+  .simply-countdown > .simply-section {
+    height: 80px;
+    width: 80px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .simply-countdown > .simply-section {
+    height: 60px;
+    width: 60px;
+  }
+}
 
 @keyframes pulse {
   0% {
@@ -1003,6 +1022,18 @@ form label {
   height: 100px;
   width: 100px;
 }
+@media screen and (max-width: 768px) {
+  .simply-countdown > .simply-section > div {
+    height: 80px;
+    width: 80px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .simply-countdown > .simply-section > div {
+    height: 60px;
+    width: 60px;
+  }
+}
 
 .simply-countdown > .simply-section .simply-amount,
 .simply-countdown > .simply-section .simply-word {
@@ -1013,13 +1044,39 @@ form label {
 
 .simply-countdown > .simply-section .simply-amount {
   font-size: 30px;
+  line-height: 1.4;
   /* amounts */
+}
+@media screen and (max-width: 768px) {
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+}
+@media screen and (max-width: 480px) {
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 20px;
+    line-height: 1;
+  }
 }
 
 .simply-countdown > .simply-section .simply-word {
   text-transform: uppercase;
   font-size: 12px;
+  line-height: 1.4;
   /* words */
+}
+@media screen and (max-width: 768px) {
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+}
+@media screen and (max-width: 480px) {
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 8px;
+    line-height: 1;
+  }
 }
 
 #fh5co-testimonial,
@@ -1212,8 +1269,7 @@ form label {
   font-size: 60px;
   margin-bottom: 10px;
   line-height: 1.5;
-  font-weight: bold;
-  color: var(--primary);
+  color: var(--pink);
   text-shadow: var(--shadow-effect-primary);
   font-family: "Sacramento", Arial, serif;
 }
@@ -1615,9 +1671,11 @@ form label {
 .fh5co-nav-toggle.fh5co-nav-white > i {
   color: var(--white);
   background: var(--white);
+  box-shadow: var(--shadow-effect);
 }
 .fh5co-nav-toggle.fh5co-nav-white > i::before, .fh5co-nav-toggle.fh5co-nav-white > i::after {
   background: var(--white);
+  box-shadow: var(--shadow-effect);
 }
 
 .fh5co-nav-toggle i::before {
@@ -1638,6 +1696,7 @@ form label {
 
 .fh5co-nav-toggle.active i {
   background: transparent;
+  box-shadow: none;
 }
 
 .fh5co-nav-toggle.active i::before {
@@ -1647,6 +1706,8 @@ form label {
   -ms-transform: rotateZ(45deg);
   -o-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
+  background: var(--black-secondary);
+  box-shadow: none;
 }
 
 .fh5co-nav-toggle.active i::after {
@@ -1656,6 +1717,8 @@ form label {
   -ms-transform: rotateZ(-45deg);
   -o-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg);
+  background: var(--black-secondary);
+  box-shadow: none;
 }
 
 .fh5co-nav-toggle {
