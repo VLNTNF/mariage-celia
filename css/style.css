@@ -109,11 +109,6 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 40px 0;
   z-index: 1001;
 }
-@media screen and (max-width: 768px) {
-  .fh5co-nav {
-    padding: 20px 0;
-  }
-}
 .fh5co-nav #fh5co-logo {
   font-size: 40px;
   margin: 0;
@@ -121,6 +116,22 @@ h1, h2, h3, h4, h5, h6, figure {
   line-height: 40px;
   font-family: "Sacramento", Arial, serif;
   text-shadow: var(--shadow-effect);
+}
+@media screen and (max-width: 768px) {
+  .fh5co-nav {
+    padding: 20px 0;
+  }
+  .fh5co-nav #fh5co-logo {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fh5co-nav {
+    padding: 20px 0;
+  }
+  .fh5co-nav #fh5co-logo {
+    font-size: 30px;
+  }
 }
 .fh5co-nav a {
   padding: 5px 10px;
@@ -872,14 +883,14 @@ form label {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 40px;
+    font-size: 70px;
   }
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 30px;
+    font-size: 50px;
   }
 }
 #fh5co-header .display-tc h2,
@@ -1448,7 +1459,7 @@ form label {
   position: absolute;
   z-index: 1901;
   width: 270px;
-  background: var(--black);
+  background: var(--purple);
   top: 0;
   right: 0;
   top: 0;
@@ -1472,10 +1483,10 @@ form label {
   transform: translateX(0px);
 }
 #fh5co-offcanvas a {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--black-primary);
 }
 #fh5co-offcanvas a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--black-secondary);
 }
 #fh5co-offcanvas ul {
   padding: 0;
