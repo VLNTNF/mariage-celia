@@ -1682,11 +1682,11 @@ form label {
 }
 
 .fh5co-nav-toggle i::before {
-  top: -7px;
+  top: -10px; /* 7px */
 }
 
 .fh5co-nav-toggle i::after {
-  bottom: -7px;
+  bottom: -10px; /* 7px */
 }
 
 .fh5co-nav-toggle:hover i::before {
