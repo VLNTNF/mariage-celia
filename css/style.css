@@ -1,20 +1,18 @@
 :root {
   --blue: #c1e0ff;
   --black: #000;
-  --primary: rgba(0, 0, 0, 0.6);
-  --secondary: rgba(0, 0, 0, 0.4);
   --brown: #8b7568;
   --dark-brown: #574e4a;
   --green: #ccffdb;
   --light-brown: #b0a49f;
   --orange: #ffd7ae;
   --pink: #ffd2ff;
-  --primary: #574e4a;
+  --primary: #5a4840;
   --purple: #ebd7ff;
   --secondary: #8b7568;
   --white: #fff;
   --yellow: #ffffb3;
-  --shadow-effect: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+  --shadow-effect: 0; /* 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15); */
 }
 
 @font-face {
@@ -253,6 +251,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav ul li.active > a {
   text-shadow: var(--shadow-effect);
   color: var(--white) !important;
+  text-decoration: underline;
 }
 
 #fh5co-counter,
@@ -371,7 +370,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .fh5co-cover.fh5co-cover-sm {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   height: 600px;
 }
 @media screen and (max-width: 768px) {
@@ -570,8 +569,8 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .timeline > li > .timeline-badge {
-  background-size: cover;
-  background-position: top center;
+  background-size: 160px;
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
   color: var(--white);
@@ -584,12 +583,14 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 16px;
   left: 50%;
   margin-left: -80px;
-  background-color: #999999;
+  background-color: var(--white);
   z-index: 100;
+  /*
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+  */
 }
 @media screen and (max-width: 480px) {
   .timeline > li > .timeline-badge {
