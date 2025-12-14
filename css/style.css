@@ -586,7 +586,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background-color: var(--white);
   z-index: 100;
   /*
-  -webkit-border-radius: 50%;
+  -webkit-border-radius: 50%;s
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
@@ -594,6 +594,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 480px) {
   .timeline > li > .timeline-badge {
+    background-size: 70px;
     width: 60px;
     height: 60px;
     margin-left: -20px !important;
