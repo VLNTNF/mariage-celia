@@ -758,12 +758,12 @@ h1, h2, h3, h4, h5, h6, figure {
   color: var(--white);
   font-weight: bold;
 }
-#fh5co-gallery-list li a .case-studies-summary h4 {
+#fh5co-gallery-list li a .case-studies-summary h4, i {
   color: var(--white);
   margin-bottom: 0;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-gallery-list li a .case-studies-summary h4 {
+  #fh5co-gallery-list li a .case-studies-summary h4, i {
     font-size: 20px;
   }
 }
@@ -1572,7 +1572,7 @@ form label {
 }
 #fh5co-offcanvas ul li {
   padding: 0;
-  margin: 0;
+  margin: 0 0 0.5em 0;
   list-style: none;
 }
 #fh5co-offcanvas ul li > ul {
