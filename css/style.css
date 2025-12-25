@@ -1439,6 +1439,10 @@ form label {
   margin-bottom: 10px;
 }
 
+.feature-copy p {
+  text-align: justify;
+}
+
 #fh5co-started {
   position: relative;
 }
