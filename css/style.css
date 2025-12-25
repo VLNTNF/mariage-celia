@@ -1443,6 +1443,11 @@ form label {
   text-align: justify;
 }
 
+.feature-copy img {
+  width: 300px;
+  max-width: 100%;
+}
+
 #fh5co-started {
   position: relative;
 }
